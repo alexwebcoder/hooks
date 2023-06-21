@@ -3,8 +3,8 @@ import { useState } from "react";
 function App() {
     useState();
     //has to be at top level of the function, not in an if block
-    //use state always returns an array with two values
-    //the first one is the current state and the second is the function that updates the current state
+    //use state always returns an array with two values, so we destructure it to get the values out
+    //the first value is the current state and the second is the function that updates the current state
     //if you pass in the initial state as a function, it will run only the first time the component renders
     const [count, setCount] = useState(()=>{
 
